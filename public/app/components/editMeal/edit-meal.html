@@ -1,0 +1,25 @@
+<div class="container center_div">
+ <h1 class="text-center">Edit a new meal</h1>
+
+
+<form ng-submit="addRecipe()">
+  <fieldset class="form-group">
+    <label for="name">Name:</label>
+    <input name="name" type="text" placeholder="Enter a name" ng-model="model.mealName" class="form-control"/>
+    <label for="description">Description:</label>
+    <small class="text-muted">Give your meal a descriptive name</small>
+    <input name="description" ng-model="model.mealDescription" type="text" placeholder="Enter a description" class="form-control"/>
+    <label for="note">Note</label>
+
+ <small class="text-muted">Add a note for this meal</small>
+  <div ng-hide="checked">
+   <input name="note" type="text" ng-model="model.mealNote" placeholder="Enter a note" class="form-control"/>
+  </div>
+
+  </fieldset>
+
+   <button type="submit" ng-click="model.updateMeal(model.mealName, model.mealDescription, model.mealNote)" class="btn btn-primary">Save Meal</button>
+  <a href="#/list" class="btn btn-default">Cancel</a>
+</form>
+
+</div>

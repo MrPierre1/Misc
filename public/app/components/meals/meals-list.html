@@ -1,0 +1,109 @@
+<!-- <h1 class="text-center">SHABA PL LIVES</h1>
+
+<div>
+<a href="#/add"><button class="btn btn-primary addBtn">Create New Meal</button></a>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Name
+      <input type="text" ng-model="search" placeholder="Search by Name"/></th>
+      <th>Description</th>
+      <th>Notes</th>
+      <th> Rating</th>
+      <th> Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="recipe in model.recipes | filter: search">
+      <td ng-click="model.deleteMeal(recipe)" style="width: 50px;"><a href="#/list" class="btn"><span  class="glyphicon glyphicon-remove"></span></a></td>
+            <td style="width: 50px;"><a href="#/edit/{{recipe._id}}" class="btn"><span  class="glyphicon glyphicon-pencil"></span></a></td>
+      <td> {{recipe.name}}</td>
+      <td> {{recipe.description}}</td>
+      <td> {{recipe.note}}</td>
+      <td>
+
+
+<select ng-model="recipe.rating" ng-options="x for x in model.ratings" ng-change="model.selectAction(recipe, recipe.rating)" >{{recipe.rating}}
+</select>
+
+   </td>
+   <td> {{model.date | date:'yyyy-MM-dd'}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+ -->
+
+
+
+
+<div>
+ <table  class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp fullwidth table table-hover table-mc-light-blue" style="width:100%;">
+  <thead>
+      <!-- <input type="text" ng-model="search" placeholder="Search by Name"/></th> -->
+
+
+       <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" ng-model="search" placeholder="Search by Name"/>
+            <!-- <label class="mdl-textfield__label" for="name">Name</label> -->
+          </div>
+
+
+
+
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric "></th>
+      <th></th>
+      <th>Name</th>
+      <!-- <input type="text" ng-model="search" placeholder="Search by Name"/></th> -->
+      <th class="fullwidth">Description</th>
+      <th class="fullwidth">Note</th>
+      <th class="fullwidth">Rating</th>
+
+    </tr>
+  </thead>
+  <tbody ng-repeat="recipe in model.recipes | filter: search" >
+
+
+
+
+
+
+
+    <tr>
+    <!--   <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td> -->
+    <td ng-click="model.deleteMeal(recipe)" style="width: 50px;"><a href="#/list" class="btn"><span  class="glyphicon glyphicon-remove"></span></a></td>
+            <td style="width: 50px;"><a href="#/edit/{{recipe._id}}" class="btn"><span  class="glyphicon glyphicon-pencil"></span></a></td>
+
+      <td>{{recipe.name}}</td>
+      <td>{{recipe.description}}</td>
+      <td>{{recipe.note}}</td>
+<td>
+
+
+<select ng-model="recipe.rating" ng-options="x for x in model.ratings" ng-change="model.selectAction(recipe, recipe.rating)" >{{recipe.rating}}
+</select>
+
+   </td>
+
+    </tr>
+    <!-- <tr>
+      <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+      <td>{{recipe.description}}</td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+      <td>{{recipe.note}}</td>
+    </tr> -->
+  </tbody>
+</table>
+
+</div>

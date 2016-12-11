@@ -1,0 +1,107 @@
+<!-- <div class="container">
+    <div class="row">
+    <div class="span12">
+      <form class="form-horizontal">
+        <fieldset>
+          <div id="legend">
+            <legend class="">Login</legend>
+          </div>
+          <div class="control-group"> -->
+            <!-- Username -->
+          <!--   <label class="control-label"  for="username">Username</label>
+            <div class="controls">
+              <input type="text" id="username" name="username" placeholder="" class="input-xlarge" ng-model="model.username">
+            </div>
+          </div> -->
+
+           <!-- <div class="control-group"> -->
+            <!-- Username -->
+            <!-- <label class="control-label"  for="username">First Name</label>
+            <div class="controls">
+              <input type="text" id="username" name="firstName" placeholder="" class="input-xlarge" ng-model="model.firstName">
+            </div>
+          </div>
+          <div class="control-group"> -->
+            <!-- Username -->
+            <!-- <label class="control-label"  for="username">Last Name</label>
+            <div class="controls">
+              <input type="text" id="lastName" name="lastName" placeholder="" class="input-xlarge" ng-model="model.lastName">
+            </div>
+          </div> -->
+
+
+        <!-- <div class="control-group"> -->
+            <!-- Username -->
+            <!-- <label class="control-label"  for="username">email</label>
+            <div class="controls">
+              <input type="text" id="email" name="email" placeholder="" class="input-xlarge" ng-model="model.email">
+            </div>
+          </div> -->
+
+
+          <!-- <div class="control-group"> -->
+            <!-- Password-->
+         <!--    <label class="control-label" for="password">Password</label>
+            <div class="controls">
+              <input type="password" id="password" name="password" placeholder="" class="input-xlarge" ng-model="model.password">
+            </div>
+          </div>
+          <div class="control-group"> -->
+            <!-- Button -->
+            <!-- <div class="controls"> -->
+              <!-- <button class="btn btn-success" ng-click="model.registerUser()">Register</button> -->
+              <!-- <button class="btn btn-success" ng-click="model.addUser()">Login</button> -->
+       <!--      </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="mdl-layout mdl-js-layout mdl-color--grey-100 md-grid">
+  <main class="mdl-layout__content mdl-cell mdl-cell--4-col mdl-cell--4-offset">
+    <div class="mdl-card mdl-shadow--6dp">
+      <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+        <h2 class="mdl-card__title-text">Regiser</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" ng-model="model.username" id="username" />
+            <label class="mdl-textfield__label" for="username">Username</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" ng-model="model.firstName" id="fname" />
+            <label class="mdl-textfield__label" for="fname">First Name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" ng-model="model.lastName" id="lname" />
+            <label class="mdl-textfield__label" for="lname">Last Name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="email" ng-model="model.email" id="email" />
+            <label class="mdl-textfield__label" for="email">Email</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="password" ng-model="model.password" id="userpass" />
+            <label class="mdl-textfield__label" for="userpass">Password</label>
+          </div>
+
+        </form>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect login">
+        <a href="#/login" ng-click="model.registerUser()">Register</a></button>
+
+
+        <!-- <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
+
+            <div> <a href="#/register">Not a member? Register</a></div>
+ -->
+      </div>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Meal App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../bower_components/angular-material.min.css">
+
+
+     <!-- <link rel="stylesheet" href="app.css"> -->
+       <head>
+  
+</head>
+<body>
+
+<!-- <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Weekly Meal</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#/add" class="mdl-layout__tab">Add</a> -->
+          <!-- <a href="#/login" class="mdl-layout__tab">Login</a> -->
+       <!--    <a href="#/list" class="mdl-layout__tab">List</a>
+        </div>
+      </header> -->
+
+
+<!-- <div layout="row" layout-padding class="bg-dark-blue nav-dark" layout-align="space-between center">
+<div>
+    <md-button>Home</md-button>
+    <md-button>Item 1</md-button>
+    <md-button>Item 2</md-button>
+    <md-menu>
+        <md-button md-menu-origin ng-click="$mdOpenMenu()">Help</md-button>
+        <md-menu-content width="2">
+            <md-menu-item>
+                <md-button>Help</md-button>
+            </md-menu-item>
+            <md-menu-item>
+                <md-button>About</md-button>
+            </md-menu-item>
+        </md-menu-content>
+    </md-menu>
+</div>
+<div class="nav-buttons">
+    <md-button class="md-raised md-accent">My profile</md-button>
+    <md-button class="md-raised md-warn">Log Out</md-button>
+</div>
+ -->
+
+
+
+ <!-- <body layout="row" ng-controller="AppCtrl"> -->
+<!--  <md-toolbar layout="row" class="md-whiteframe-z3" style="padding:0px;margin:0px;position:fixed;">
+    <h2>Sample navbar</h2>
+</md-toolbar>
+ -->
+
+    <div layout="column" class="relative" layout-fill role="main">
+      <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
+        <ng-md-icon icon="add"></ng-md-icon>
+      </md-button>
+      <md-toolbar ng-show="!showSearch">
+        <div class="md-toolbar-tools">
+          <md-button ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+            <ng-md-icon icon="menu"></ng-md-icon>
+          </md-button>
+          <h3>
+            Dashboard
+          </h3>
+          <span flex></span>
+          <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+            <ng-md-icon icon="search"></ng-md-icon>
+          </md-button>
+          <md-button aria-label="Open Settings" ng-click="showListBottomSheet($event)">
+            <ng-md-icon icon="more_vert"></ng-md-icon>
+          </md-button>
+        </div>
+        <md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
+          <md-tab id="tab1" href="#/list" aria-controls="tab1-content">
+            Latest
+          </md-tab>
+          <md-tab id="tab2" ng-href="#/add" aria-controls="tab2-content">
+            Favorites
+          </md-tab>
+        </md-tabs>
+      </md-toolbar>
+    </div>
+
+  <div ng-view>
+
+  </div>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  
+  <script src="../bower_components/angular-animate/angular-animate.js"></script>
+  <script src="../bower_components/angular-aria/angular-aria.js"></script>
+
+  <script src="../bower_components/angular-messages/angular-messages.js"></script>
+  <script src="../bower_components/angular-material/angular-material.js"></script>
+  <script src="app.js"></script>
+  <!-- <script src="components/mealsService.js"></script> -->
+  <script src="components/addMeal/add-meal-component.js"></script>
+  <script src="components/login/login-component.js"></script>
+  <script src="components/register/register-component.js"></script>
+  <script src="components/editMeal/edit-meal-component.js"></script>
+  <script src="components/meals/meals-list-component.js"></script>
+  <!-- // <script src="components/services/mealService.js"></script> -->
+
+
+
+</body>
+</html>
