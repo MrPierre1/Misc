@@ -20,8 +20,12 @@
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-jsonschema": "^1.1.6",
+    "express-validation": "^1.0.1",
     "http-server": "^0.9.0",
+    "joi": "^10.0.6",
     "jwt-simple": "^0.5.0",
-    "mongodb": "^2.2.5"
+    "mongodb": "^2.2.5",
+    "promise-mongo": "^3.0.3"
   }
 }

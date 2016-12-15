@@ -12,9 +12,74 @@
 
      <!-- <link rel="stylesheet" href="app.css"> -->
        <head>
-  
+         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+               rel="stylesheet">
 </head>
-<body>
+
+<form role = "form">
+
+  <div class="form-group">
+    <label for="sel1">Select list:</label>
+    <select class="form-control" id="sel1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+
+  <div class = "form-group">
+     <label for = "name">Summaru</label>
+     <input type = "text" class = "form-control" placeholder = "Text input">
+  </div>
+
+   <div class = "form-group">
+      <label for = "name">Preconditions</label>
+      <input type = "text" class = "form-control" placeholder = "Text input">
+   </div>
+
+   <div class = "form-group">
+    <label for = "name">Text Area</label>
+    <textarea class = "form-control" rows = "3"></textarea>
+ </div>
+
+</form>
+
+<!-- <body  lay
+out-align="center center">
+
+
+
+          <h2>Add Testcase</h2>
+          <form>
+
+              <input  type="text" ng-model="model.params.name" id="name" />
+              <label  for="name">Title</label>
+
+              <input  type="textarea" ng-model="model.params.description" id="description" />
+              <label  for="description">Status</label>
+
+              <input  type="text" ng-model="model.params.description" id="description" />
+              <label  for="description">Summary</label>
+
+              <input  type="text" ng-model="model.params.description" id="description" />
+              <label  for="description">Preconditions</label>
+
+              <input  type="textarea" ng-model="model.params.note" id="note" />
+              <label  for="note">Body</label>
+
+              <input  type="text" ng-model="model.params.note" id="note" />
+              <label  for="note">Expected Results</label>
+          </form>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect login" ng-click="model.login()">
+          <a href="#/login">Create New Meal</a></button>
+
+    <a href="#/meals/list" class="btn btn-default">Cancel</a>
+
+ -->
+
+
 
 <!-- <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
@@ -64,7 +129,7 @@
 </md-toolbar>
  -->
 
-    <div layout="column" class="relative" layout-fill role="main">
+    <!-- <div layout="column" class="relative" layout-fill role="main">
       <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
         <ng-md-icon icon="add"></ng-md-icon>
       </md-button>
@@ -95,13 +160,13 @@
       </md-toolbar>
     </div>
 
-  <div ng-view>
+  <div ng-view> -->
 
   </div>
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
-  
+
   <script src="../bower_components/angular-animate/angular-animate.js"></script>
   <script src="../bower_components/angular-aria/angular-aria.js"></script>
 
@@ -109,10 +174,10 @@
   <script src="../bower_components/angular-material/angular-material.js"></script>
   <script src="app.js"></script>
   <!-- <script src="components/mealsService.js"></script> -->
-  <script src="components/addMeal/add-meal-component.js"></script>
-  <script src="components/login/login-component.js"></script>
+   <script src="components/addMeal/add-meal-component.js"></script>
+  <!-- <script src="components/login/login-component.js"></script>
   <script src="components/register/register-component.js"></script>
-  <script src="components/editMeal/edit-meal-component.js"></script>
+  <script src="components/editMeal/edit-meal-component.js"></script> -->
   <script src="components/meals/meals-list-component.js"></script>
   <!-- // <script src="components/services/mealService.js"></script> -->
 
